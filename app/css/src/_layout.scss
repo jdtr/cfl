@@ -1,0 +1,47 @@
+//Banner main
+.banner-mn{
+    width: 100%;
+    height: 500px;
+    //Min-width:1200
+    @media (min-width:$tablet){
+        height: 560px;
+    }
+}
+.banner-mn_pane{
+    background: $green-one url(../images/shapes-1.png) no-repeat bottom center / 100%;
+}
+.banner-mn_txt{
+    position: absolute;
+    width:100%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    padding: 0 15px;
+    transform: translate(-50%,-50%);
+    p{
+        font-size: 24px;
+    }
+    .btn{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    //Max-width:991px
+    @media (max-width:$max-mobile){
+        top: 55%;
+    }
+}
+.banner-mn_bg{
+    background-image: url(../images/lg-people.jpg);
+    //mmax-width:76/
+    @media (max-width:$max-mobile){
+        display: none;
+    }
+}
+.banner-mn_title{
+    font-size: 60px;
+    line-height: .6em;
+    margin-bottom: 10px;
+    span{
+        font-size: 40px;
+    }
+}

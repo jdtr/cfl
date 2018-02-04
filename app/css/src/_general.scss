@@ -1,0 +1,209 @@
+//---------- Animation ---------
+@keyframes show-nav{
+    to{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes show-menu{
+    to{
+        transform: translate(0);
+    }
+}
+
+//---------- TAGS ---------
+html, body{
+   font-family: $font;
+    font-size: 16px;
+    color: $gray-two;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+//---------- CLASS ---------
+.page-no-scroll{
+    overflow-y: hidden;
+}
+//box
+.mg-btm-10{
+    margin-bottom: 10px;
+}
+.mg-btm-15{
+    margin-bottom: 15px;
+}
+.mg-btm-20{
+    margin-bottom: 20px;
+}
+.mg-btm-30{
+    margin-bottom: 30px;
+}
+.mg-btm-40{
+    margin-bottom: 40px;
+}
+.mg-btm-50{
+    margin-bottom: 50px;
+}
+.mg-btm-60{
+    margin-bottom: 60px;
+}
+.mg-btm-80{
+    margin-bottom: 80px;
+}
+.pad-01{
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.pad-y-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+//Containers
+.container--md{
+    max-width: 830px;
+}
+
+//Text
+.font-13{
+    font-size: 13px;
+    font-size: $size-13;
+}
+.font-14{
+    font-size: 14px;
+    font-size: $size-14;
+}
+.font-18{
+    font-size: 18px;
+    font-size: $size-18;
+}
+.font-20{
+    font-size: 20px;
+    font-size: $size-20;
+}
+.font-30{
+    font-size: 30px;
+    font-size: $size-30;
+}
+.font-35{
+    font-size: 35px;
+    font-size: $size-35;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.regular{
+    font-weight: normal;
+}
+.bold{
+    font-weight: bold;
+}
+//Colors
+.color-white{
+    color: white;
+}
+.color-green-one{
+    color: $green-one;
+}
+.color-green-two{
+    color: $green-two;
+}
+.color-green-three{
+    color:$green-three;
+}
+.bg-black-one{
+    background-color: $black-one;
+}
+.bg-black-two{
+    background-color: black;
+}
+.bg-green-one{
+    background-color: $green-one;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-gray-light{
+    background-color: $gray-one;
+}
+.bg-center{
+    background-position: center;
+}
+.bg-cover{
+    background-size: cover;
+}
+
+//Buttons
+.btn{
+    position: relative;
+    padding: 10px 30px;
+    transition: background-color .3s ease;
+}
+.btn, .el-in-b{
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-radius{
+    border-radius: 30px;
+}
+.btn-arrow{
+    padding-right: 70px;
+    em{
+        position: absolute;
+        right: 25px;
+        font-size: $size-35;
+        @include center_y();
+        transition: right .2s ease;
+    }
+    &:hover{
+        em{
+            right: 15px;
+        }
+    }
+}
+.btn-white{
+    background-color: white;
+    border: 1px solid white;
+    color: $green-one;
+}
+.btn-green-two{
+    background-color: $green-two;
+    color: white
+}
+.btn-trans-white{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    &:hover{
+        background-color: white;
+        color: inherit;
+    }
+}
+//Overlay
+.overlay{
+    &:before{
+        @include cont_elm();
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black,.5);
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "dev",
+  "name": "argos-360",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-sourcemaps": "1.7.x"
+  },
+  "dependencies": {
+    "pump": "^2.0.0"
   }
 }

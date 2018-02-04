@@ -7,14 +7,16 @@
     <title>Cities for life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/vendors.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 
 <body>
     <div id="main">
-        <div class="bar-tp bg-black color-white">
+        <div class="bar-tp bg-black-one color-white">
             <div class="container">
                 <div class="grid">
                     <div class="col-md-8">
@@ -24,16 +26,16 @@
                             <em class="icon-call" aria-hidden="true"></em> (+ 054) 123 - 11 - 35</span>
                         <span class="el-in-b bar-tp_item">
                             <em class="icon-mail" aria-hidden="true"></em> info@citiesfor.life</span>
-                        <a href="#" class="el-in-b btn-radius">Contacta a un asesor</a>
+                        <a href="#" class="el-in-b btn btn-radius btn-trans-white">Contacta a un asesor</a>
                     </div>
                     <!-- /col -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 text-right">
                         <a href="#" class="el-in-b bar-tp_item">
                             <em class="icon-key" aria-hidden="true"></em> Inicio Sesión</a>
                         <a href="#" class="el-in-b bar-tp_item">
                             <em class="icon-user" aria-hidden="true"></em> Registro</a>
-                        <div class="el-in-b bar-tp_item">
-                            <a href="#" class="el-in-b">Esp</a>
+                        <div class="el-in-b bar-tp_item bt-tp_lang">
+                            <a href="#" class="el-in-b">Esp</a> /
                             <a href="#" class="el-in-b">Eng</a>
                         </div>
                     </div>
@@ -46,23 +48,23 @@
         <!-- /bar-top -->
         <header class="header-main" id="header-main">
             <div class="container">
-                <div class="grid">
-                    <div class="col-md-4">
+                <div class="grid flex-container flex-align-center">
+                    <div class="col-sm-4">
                         <a href="#" class="logo logo--main">
                             <img src="images/cities-for-life.svg" alt="Logo cities for life" />
                             <img src="images/ruta-n.svg" alt="Logo Ruta N" />
                         </a>
                     </div>
                     <!-- /col -->
-                    <div class="col-md-8">
+                    <div class="col-sm-8">
                         <button class="btn-mobile" id="btn-mobile" aria-label="true"></button>
-                        <nav class="nav-main">
-                            <ul class="menu-main">
+                        <nav class="nav-main" id="nav-main">
+                            <ul class="menu-main" id="menu-main">
                                 <li>
                                     <a href="#">Conócenos</a>
                                 </li>
                                 <li>
-                                    <a href="#">Cómo participar</a>
+                                    <a href="#" class="has-submenu">Cómo participar</a>
                                     <ul class="submenu-main">
                                         <li>
                                             <a href="#">Miembro</a>
@@ -93,8 +95,8 @@
             <!-- /container -->
         </header>
 
-        <section class="clearfix flex-container banner-mn">
-            <div class="col-sm-5 bg-green-one banner-mn_pane">
+        <section class="clearfix flex-container flex-align-stretch banner-mn">
+            <div class="col-sm-5 col-md-4 banner-mn_pane">
                 <div class="banner-mn_txt color-white">
                     <h1 class="banner-mn_title">Generar
                         <span>estrategias</span>
@@ -107,14 +109,14 @@
                 <button class="banner-mn_video" aria-label="Play video"></button>
             </div>
             <!-- /col -->
-            <div class="col-sm-7 bg-cover bg-center banner-main_bg overlay overlay-black" aria-hidden="true"></div>
+            <div class="col-sm-7 col-md-8 bg-cover bg-center banner-mn_bg overlay overlay-black" aria-hidden="true"></div>
             <!-- /col -->
         </section>
 
         <section class="pad-y-80">
-            <div class="container">
+            <div class="container container--md">
                 <div class="text-center">
-                    <h2 class="ht-one color-blue el-in-b mg-btm-30">
+                    <h2 class="ht-one color-green-two el-in-b mg-btm-30">
                         <span class="ht-back">Descubre</span>
                         <span class="ht-front text-uppercase">CITIES FOR LIFE</span>
                     </h2>
@@ -124,34 +126,34 @@
                 </div>
 
                 <div class="grid text-center">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mg-btm-50">
                         <figure class="fig mg-btm-30">
                             <img src="images/strategy.svg" alt="" />
                         </figure>
-                        <h3 class="general">Generar estrategias
+                        <h3 class="regular">Generar estrategias
                             <br/>locales de co-creación</h3>
                     </div>
                     <!-- /col-->
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mg-btm-50">
                         <figure class="fig mg-btm-30">
                             <img src="images/hands.svg" alt="" />
                         </figure>
-                        <h3 class="general">Incrementar la
+                        <h3 class="regular">Incrementar la
                             <br/>participación ciudadana</h3>
                     </div>
                     <!-- /col-->
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mg-btm-50">
                         <figure class="fig mg-btm-30">
                             <img src="images/exchange.svg" alt="" />
                         </figure>
-                        <h3 class="general">Incrementar la
+                        <h3 class="regular">Incrementar la
                             <br/>participación ciudadana</h3>
                     </div>
                     <!-- /col-->
                 </div>
                 <!-- /grid -->
                 <div class="text-center">
-                    <a href="#" class="btn btn-radius btn-arrow btn-green-two">Conoce más
+                    <a href="#" class="btn btn-radius btn-arrow btn-green-two font-20">Conoce más
                         <em class="icon-arrow"></em>
                     </a>
                 </div>
@@ -160,18 +162,114 @@
         </section>
 
         <section class="pad-01">
-            <div class="t-two color-green-one mg-btm-40">
-                <h2 class="text-uppercase font-30 el-in-b">ÚLTIMOS RETOS</h2>
-            </div>
+            <div class="container">
+                <div class="ht-two color-green-one mg-btm-40 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="362" height="31" viewBox="0 0 361.6 31" class="b-l"><polyline points="1 31 1 1 361.6 1 " style="fill:none;stroke-width:2;stroke:#C4D459"/></svg>
+                    <h2 class="text-uppercase font-30 el-in-b ht-two_h">ÚLTIMOS RETOS</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="362" height="31" viewBox="0 0 361.6 31" class="b-r"><polyline points="361.6 31 361.6 1 1 1 " style="fill:none;stroke-width:2;stroke:#C4D459"/></svg>
+                </div>
+            </div><!-- /container -->
             <div class="last-challenges mg-btm-60">
                 <article class="chl-item">
-
+                    <div class="cont-chl">
+                        <div class="tag-catg color-white">Salud</div>
+                        <div class="cont-chl_txt bg-white">
+                            <h3 class="semibold font-20 mg-btm-10">Lorem ipsum dolor sit amet, consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore</p>
+                            <a href="#" class="btn btn-radius btn-arrow">Ver más detalles
+                                <em class="icon-arrow"></em>
+                            </a>
+                            <figure>
+                                <img src="images/medellin-hex.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- /cont-chl_txt -->
+                    </div>
                     <div class="chl-item_cont color-white text-center color-white">
                         <em class="icon-plus" tabindex="0"></em>
                         <p>Lorem ipsum dolor sit amet, consectetur </p>
                         <span class="chl-item_btm">Salud</span>
                     </div>
                 </article>
+                <!-- /article -->
+                <article class="chl-item">
+                    <div class="cont-chl">
+                        <div class="tag-catg color-white">Salud</div>
+                        <div class="cont-chl_txt bg-white">
+                            <h3 class="semibold font-20 mg-btm-10">Lorem ipsum dolor sit amet, consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore</p>
+                            <a href="#" class="btn btn-radius btn-arrow">Ver más detalles
+                                <em class="icon-arrow"></em>
+                            </a>
+                            <figure>
+                                <img src="images/medellin-hex.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- /cont-chl_txt -->
+                    </div>
+                    <div class="chl-item_cont color-white text-center color-white">
+                        <em class="icon-plus" tabindex="0"></em>
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="chl-item_btm">Salud</span>
+                    </div>
+                </article>
+                <!-- /article -->
+                <article class="chl-item">
+                    <div class="cont-chl">
+                        <div class="tag-catg color-white">Salud</div>
+                        <div class="cont-chl_txt bg-white">
+                            <h3 class="semibold font-20 mg-btm-10">Lorem ipsum dolor sit amet, consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore</p>
+                            <a href="#" class="btn btn-radius btn-arrow">Ver más detalles
+                                <em class="icon-arrow"></em>
+                            </a>
+                            <figure>
+                                <img src="images/medellin-hex.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- /cont-chl_txt -->
+                    </div>
+                    <div class="chl-item_cont color-white text-center">
+                        <em class="icon-plus" tabindex="0"></em>
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="chl-item_btm">Salud</span>
+                    </div>
+                </article>
+                <!-- /article -->
+                <article class="chl-item">
+                    <div class="cont-chl">
+                        <div class="tag-catg color-white">Salud</div>
+                        <div class="cont-chl_txt bg-white">
+                            <h3 class="semibold font-20 mg-btm-10">Lorem ipsum dolor sit amet, consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore</p>
+                            <a href="#" class="btn btn-radius btn-arrow">Ver más detalles
+                                <em class="icon-arrow"></em>
+                            </a>
+                            <figure>
+                                <img src="images/medellin-hex.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- /cont-chl_txt -->
+                    </div>
+                    <div class="chl-item_cont color-white text-center">
+                        <em class="icon-plus" tabindex="0"></em>
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="chl-item_btm">Salud</span>
+                    </div>
+                </article>
+                <!-- /article -->
             </div>
 
             <div class="text-center">
@@ -183,8 +281,8 @@
 
         <section class="pad-01">
             <div class="container">
-                <div class="t-three color-green-one mg-btm-80">
-                    <h2 class="text-uppercase font-30 el-in-b">CÓMO PARTICIPAR</h2>
+                <div class="ht-three color-green-one mg-btm-80 text-center">
+                    <h2 class="text-uppercase font-30 el-in-b ht-three_h">CÓMO PARTICIPAR</h2>
                 </div>
                 <div class="grid">
                     <div class="col-sm-8">
@@ -213,8 +311,8 @@
 
         <section class="pad-y-80 bg-gray-light">
             <div class="container text-center">
-                <div class="t-three color-green-one mg-btm-50">
-                    <h2 class="text-uppercase font-30 el-in-b">CÓMO PARTICIPAR</h2>
+                <div class="ht-three color-green-one mg-btm-50">
+                    <h2 class="text-uppercase font-30 el-in-b ht-three_h">CÓMO PARTICIPAR</h2>
                 </div>
                 <p>Participa activamente con tus ideas para crear soluciones e iniciativas a los retos urbanos de las ciudades
                     de Cities for Life</p>
@@ -223,7 +321,7 @@
                     <div class="swiper-wrapper swiper-wrapper--members">
                         <div class="swiper-slide swiper-slide--members">
                             <figure>
-                                <img src="images/medellin-hex.jpg" alt="Medellín" />
+                                <img src="images/medellin-hex.png" alt="Medellín" />
                             </figure>
                             <div class="hex">
                                 <img src="images/mimedellin.png" alt="Mi medellín">
@@ -232,7 +330,7 @@
                         <!-- /swipr-slide-->
                         <div class="swiper-slide swiper-slide--members">
                             <figure>
-                                <img src="images/medellin-hex.jpg" alt="Medellín" />
+                                <img src="images/medellin-hex.png" alt="Medellín" />
                             </figure>
                             <div class="hex">
                                 <img src="images/mimedellin.png" alt="Mi medellín">
@@ -241,7 +339,7 @@
                         <!-- /swipr-slide-->
                         <div class="swiper-slide swiper-slide--members">
                             <figure>
-                                <img src="images/medellin-hex.jpg" alt="Medellín" />
+                                <img src="images/medellin-hex.png" alt="Medellín" />
                             </figure>
                             <div class="hex">
                                 <img src="images/mimedellin.png" alt="Mi medellín">
@@ -250,7 +348,7 @@
                         <!-- /swipr-slide-->
                         <div class="swiper-slide swiper-slide--members">
                             <figure>
-                                <img src="images/medellin-hex.jpg" alt="Medellín" />
+                                <img src="images/medellin-hex.png" alt="Medellín" />
                             </figure>
                             <div class="hex">
                                 <img src="images/mimedellin.png" alt="Mi medellín">
@@ -273,7 +371,7 @@
 
         <section class="quantity">
             <div class="container text-center">
-                <h2 class="color-white font-30 text-transform mg-btm-60">LOGROS EN CIFRAS</h2>
+                <h2 class="color-white font-30 text-uppercase mg-btm-60">LOGROS EN CIFRAS</h2>
                 <div class="quantity-cont color-white">
                     <div class="quantity_item">
                         <em class="icon-challenge" aria-hidden="true"></em>
@@ -320,8 +418,8 @@
 
         <section class="pad-y-80">
             <div class="container">
-                <div class="t-three color-green-one mg-btm-80">
-                    <h2 class="text-uppercase font-30 el-in-b">CÓMO PARTICIPAR</h2>
+                <div class="ht-three color-green-one mg-btm-80 text-center">
+                    <h2 class="text-uppercase font-30 el-in-b ht-three_h">CÓMO PARTICIPAR</h2>
                 </div>
 
                 <div class="swiper-container swiper--participate">
@@ -373,9 +471,9 @@
         </section>
 
         <section class="global-community">
-            <div class="container container--gc color-white">
-                <div class="t-three color-white mg-btm-40">
-                    <h2 class="text-uppercase font-30 el-in-b">Comunidad global</h2>
+            <div class="container container--gc color-white text-center">
+                <div class="ht-three color-white mg-btm-40">
+                    <h2 class="text-uppercase font-30 el-in-b ht-three_h">Comunidad global</h2>
                 </div>
                 <p>Hoy Cities for Life cuenta con una red consolidada de 55 ciudades; Conoce quienes hacen parte de la Red y
                     su participación en la misma.</p>
@@ -431,8 +529,8 @@
 
         <section class="pad-y-80">
             <div class="container">
-                <div class="t-three color-green-one mg-btm-70">
-                    <h2 class="text-uppercase font-30 el-in-b">Aliados</h2>
+                <div class="ht-three color-green-one mg-btm-70 text-center">
+                    <h2 class="text-uppercase font-30 el-in-b ht-three_h">Aliados</h2>
                 </div>
                 <div class="swiper-container swiper-container-allies">
                     <div class="swiper-wrapper">
@@ -496,18 +594,26 @@
                         <div class="col-sm-4 last-col-ft">
                             <div class="info-footer color-white">
                                 <div class="text-center">
-                                        <a href="#" class="el-in-b bar-btm_item">
-                                                <em class="icon-key" aria-hidden="true"></em> Inicio Sesión</a>
-                                            <a href="#" class="el-in-b bar-btm_item">
-                                                <em class="icon-user" aria-hidden="true"></em> Registro</a>
+                                    <a href="#" class="el-in-b bar-btm_item">
+                                        <em class="icon-key" aria-hidden="true"></em> Inicio Sesión</a>
+                                    <a href="#" class="el-in-b bar-btm_item">
+                                        <em class="icon-user" aria-hidden="true"></em> Registro</a>
                                 </div>
                                 <div class="social-media">
                                     <h4 class="text-uppercase">SÍGUENOS EN</h4>
                                     <div class="sm-cont">
-                                        <a href="#" target="_blank"><em class="icon-facebook" aria-hidden="true"></em></a>
-                                        <a href="#" target="_blank"><em class="icon-twitter" aria-hidden="true"></em></a>
-                                        <a href="#" target="_blank"><em class="icon-youtube" aria-hidden="true"></em></a>
-                                        <a href="#" target="_blank"><em class="icon-instagram" aria-hidden="true"></em></a>
+                                        <a href="#" target="_blank">
+                                            <em class="icon-facebook" aria-hidden="true"></em>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <em class="icon-twitter" aria-hidden="true"></em>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <em class="icon-youtube" aria-hidden="true"></em>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <em class="icon-instagram" aria-hidden="true"></em>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -523,15 +629,24 @@
                 </div>
                 <!-- /container -->
             </div>
-            <div class="footer-level-2 text-center color-white">
-                <p>Potenciado por: <a href="#" target="_blank"><img src="images/muva.svg" alt="Agencia Muva" /></a> <a href="#" target="_blank"><img src="images/info-factor.svg" alt="Info-factor" /></a></p>
+            <div class="footer-level-2 text-center color-white bg-black-two">
+                <p>Potenciado por:
+                    <a href="#" target="_blank">
+                        <img src="images/muva.svg" alt="Agencia Muva" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/info-factor.svg" alt="Info-factor" />
+                    </a>
+                </p>
             </div>
         </footer>
         <!-- /footer-main -->
     </div>
     <!-- /Main -->
 
-    <script src="js/vendors.js"></script>
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/vendor.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
