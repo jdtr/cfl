@@ -95,7 +95,7 @@
         transform: translate(25px, 80%);
     }
     //Max-width:767
-    @media (max-width:$max-tablet){
+    @media (max-width:$max-mobile){
         overflow:hidden;
         svg{
             display: none;
@@ -161,5 +161,204 @@
     &:after{
         right: -10px;
         transform: translate(100%, -50%);
+    }
+}
+
+//Swiper
+.swiper-container-horizontal{
+    .swiper-pagination{
+        bottom: 0;
+    }
+}
+.swiper-pagination{
+    .swiper-pagination-bullet{
+        width:12px;
+        height: 12px;
+        background: $green-one;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background: $green-two;
+    }
+}
+//History
+.swiper-container--his{
+    padding-bottom:50px; 
+    margin-bottom: 30px;
+}
+.swiper-pagination--his{
+    //Min-width:992
+    @media (min-width:$desktop-xs){
+        display: none;
+    }
+}
+.item-his_catg{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    &:before, &:after{
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+    &:before{
+        @include cont_elm();
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba($green-one, .9);
+    }
+    &:after{
+        content: url(../images/hex-white.svg);
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 152px;
+        z-index: 2;
+        @include center();
+    }
+    &:hover{
+        &:before, &:after{
+            opacity: 1;
+        }
+    }
+}
+.not-image{
+    .catg{
+        position: absolute;
+        @include center();
+        color: white;
+    }
+}
+.item-his_img{
+    .catg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 10px 15px;
+    }
+}
+.item-his_cont{
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+    .btn-only{
+        margin-top: 20px;
+    }
+}
+
+//global-community
+.global-community{
+    position: relative;
+    padding: 80px 15px 50px  15px;
+    background-color: #c8c8c8;
+}
+.btn-map{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    font-size: $size-30;
+    background-color: white;
+    box-shadow: 0 0 5px rgba($black-one, .1);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    em{
+        position: absolute;
+        @include center();
+    }
+    &:focus{
+        outline-color: transparent;
+    }
+}
+.btn-map--active{
+    box-shadow: none;
+    transform: translate(12px,5px);
+}
+.res-map{
+    display: none;
+    padding: 30px;
+    width: 280px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba($black-one, .2);
+    transform: translateY(-60px);
+    p{
+        font-size: $size-14;
+    }
+}
+.res-map--active{
+    display: block;
+    animation: option-map .3s ease forwards;
+}
+.res-map_title{
+    position: relative;
+    padding: 0 35px 15px 25px;
+}
+.res-map_close{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 8px);
+    transform: translateY(-50%);
+    color: $green-two;
+}
+.res-map_ul{
+    margin-top: 10px;
+    li{
+        border-bottom: 1px solid #dbe49a;
+    }
+}
+.res-map_a{
+    display: block;
+    position: relative;
+    font-size: $size-14;
+    padding: 12px 30px 12px 0;
+    em{
+        position: absolute;
+        right: 15px;
+        @include center_y();
+    }
+}
+
+//Fixed-media
+.fixed-media{
+    position: fixed;
+    top: 170px;
+    right: 0;
+    z-index: 100;
+    a{
+        display: block;
+        position: relative;
+        width: 45px;
+        height: 48px;
+        font-size: $size-20;
+        margin-bottom: 3px;
+        background-color: rgba($green-one, .6);
+        transition: background-color .3s ease;
+        &:hover{
+            background-color: $green-one;
+        }
+    }
+    em{
+        position: absolute;
+        color: white;
+        @include center();
+    }
+}
+//btn-up
+.btn-up{
+    position: fixed;
+    padding: 8px 15px;
+    bottom: 100px;
+    right: 15px;
+    font-size: 25px;
+    z-index: 50;
+    opacity: 0;
+    box-shadow: 0 0 5px rgba($black-one, .3);
+    transition: opacity .3s ease;
+    transform: rotate(-90deg);
+    &:hover, &.active{
+        opacity: 1;
     }
 }

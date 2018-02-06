@@ -10,6 +10,11 @@
         transform: translate(0);
     }
 }
+@keyframes option-map{
+    to{
+        opacity:1;
+    }
+}
 
 //---------- TAGS ---------
 html, body{
@@ -58,6 +63,9 @@ button{
 .mg-btm-60{
     margin-bottom: 60px;
 }
+.mg-btm-70{
+    margin-bottom: 70px;
+}
 .mg-btm-80{
     margin-bottom: 80px;
 }
@@ -71,8 +79,11 @@ button{
 }
 
 //Containers
+.container--sm{
+    max-width: 800px;
+}
 .container--md{
-    max-width: 830px;
+    max-width: 1000px;
 }
 
 //Text
@@ -137,6 +148,12 @@ button{
 .bg-green-one{
     background-color: $green-one;
 }
+.bg-green-two{
+    background-color: $green-two;
+}
+.bg-green-three{
+    background-color: $green-three;
+}
 .bg-white{
     background-color: white;
 }
@@ -196,6 +213,13 @@ button{
         color: inherit;
     }
 }
+.btn-only{
+    display: inline-block;
+    position: relative;
+    padding-top: 4px;
+    padding-bottom:4px;
+    font-weight: bold;
+}
 //Overlay
 .overlay{
     &:before{
@@ -205,5 +229,19 @@ button{
         width: 100%;
         height: 100%;
         background-color: rgba(black,.5);
+    }
+}
+//List
+.list-hex{
+    li{
+        position: relative;
+        margin-bottom: 12px;
+        padding-left:20px;
+        &:before{
+            content: url(../images/hex-xs.svg);
+            position: absolute;
+            left: 0;
+            @include center_y();
+        } 
     }
 }
