@@ -31,6 +31,11 @@
         margin:auto;
     }
 }
+.logo--int{
+    &:after{
+        background-color: $black-one;  
+    }
+}
 //Navigatin
 .nav-main{
     text-align: right;
@@ -107,9 +112,8 @@ a.has-submenu{
             @include cont_elm();
             width: 6px;
             height: 6px;
-            border-left: 1px solid white;
-            border-bottom: 1px solid white;
-            color: white;
+            border-left: 1px solid currentColor;
+            border-bottom: 1px solid currentColor;
             top:50%;
             right: 0;
             transform: translateY(-50%) rotate(-45deg);
@@ -213,4 +217,38 @@ a.has-submenu{
     @media (min-width:$desktop-xs){
         display: none;
     }
+}
+
+//header-main--int
+.header-main--int{
+    position: relative;
+    padding: 20px 0 15px 0;
+    background-color: white;
+}
+.menu-main--int{
+    a{
+        font-weight: 600;
+        color: $green-one;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+    .submenu-main{
+        border: 1px solid $green-one;
+        a{
+            color: $green-two;
+        }
+    }
+}
+
+.btn-mobile--int{
+    color: $green-two;
+}
+//Banner-int
+.banner-int{
+    padding: 45px 15px 70px 15px;
+    background-image: url(../images/shapes-2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
 }

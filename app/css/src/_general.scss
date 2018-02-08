@@ -73,12 +73,27 @@ button{
     padding-top: 20px;
     padding-bottom: 80px;
 }
+.pad-02{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.pad-03{
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.pad-y-70{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 .pad-y-80{
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
 //Containers
+.container--xs{
+    max-width: 600px;
+}
 .container--sm{
     max-width: 800px;
 }
@@ -102,6 +117,10 @@ button{
 .font-20{
     font-size: 20px;
     font-size: $size-20;
+}
+.font-24{
+    font-size: 24px;
+    font-size: $size-24;
 }
 .font-30{
     font-size: 30px;
@@ -159,6 +178,12 @@ button{
 }
 .bg-gray-light{
     background-color: $gray-one;
+}
+.bg-gray-medium{
+    background-color: $gray-three;
+}
+.bg-purple{
+    background-color: $purple;
 }
 .bg-center{
     background-position: center;
@@ -231,6 +256,11 @@ button{
         background-color: rgba(black,.5);
     }
 }
+.overlay--green-one{
+    &:before{
+        background-color: rgba($green-one, .9);
+    }
+}
 //List
 .list-hex{
     li{
@@ -243,5 +273,16 @@ button{
             left: 0;
             @include center_y();
         } 
+    }
+}
+
+//El-with-icon
+.el-with-icon{
+    position: relative;
+    padding-left: 1.6em;
+    em{
+        position: absolute;
+        top: .2em;
+        left: 0;
     }
 }

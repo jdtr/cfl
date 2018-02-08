@@ -117,9 +117,8 @@ $(function(){
     });
 
     //Scroll
-    var size_mn = $(".banner-mn").innerHeight();
     win.on("scroll", function(){
-        if($(this).scrollTop() > size_mn){
+        if($(this).scrollTop() > 480){
             $("#btn-up").addClass("active");
         }else{
             $("#btn-up").removeClass("active");
@@ -143,7 +142,15 @@ $(function(){
             $(".cont-video").hide();
         });
         $("#video-cfl").attr("src", url_video);
-    })
+    });
+
+    //Accordion
+    var acc_dt = $(".accordion_dt");
+    acc_dt.first().addClass("active");
+    acc_dt.on("click", function(){
+        acc_dt.removeClass("active");
+        $(this).addClass("active");
+    });
 
     //Up
     $("#btn-up").on("click", function(e){
